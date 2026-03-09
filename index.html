@@ -3,37 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Doctor Mad - Coming Soon</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            display: flex;
+            flex-direction: column; /* Stack image and text vertically */
+            justify-content: center; /* Center vertically */
+            align-items: center;    /* Center horizontally */
+            min-height: 100vh;
+            background-color: #ffffff;
+            font-family: sans-serif;
         }
+
+        .container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 300px; /* Adjust size as needed */
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px; /* Optional: rounds the corners */
+        }
+
         h1 {
-            font-size: 2.5rem;
-            border-right: 3px solid #333;
-            padding-right: 10px;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 2s steps(30, end), blink .75s step-end infinite;
-        }
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        @keyframes blink {
-            from, to { border-color: transparent }
-            50% { border-color: #333 }
+            color: #333;
+            font-size: 2rem;
         }
     </style>
 </head>
 <body>
-    <h1>Hello world, coming soon!</h1>
+
+    <div class="container">
+        <img src="doctormad.png" alt="Coming Soon Illustration">
+        <h1>Hello world, coming soon!</h1>
+    </div>
+
 </body>
 </html>
